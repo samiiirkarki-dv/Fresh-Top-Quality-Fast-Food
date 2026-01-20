@@ -44,7 +44,8 @@
 }
 
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("img/food-delivery-9737957_1280.jpg");
   height: 100vh;
   background-size: cover;
@@ -104,7 +105,6 @@
   gap: 90px;
 }
 
-/* REAL BOX */
 .service-box {
   width: 348px;
   min-height: 400px;
@@ -144,20 +144,73 @@
 }
 
 .container {
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
 .menu-heading {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
-
-  margin-bottom: 40px;
-  color: #2c2c2c;
+  width: 100%;
+  text-align: center;
+  font-family: "Cinzel", serif;
 }
 
-.menu-img { 
+.menu-img {
   height: 500px;
-  
+  margin-right: 40%;
+}
 
+.menu2 {
+  display: flex;
+  height: 500px;
+}
+
+.contact-section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("img/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-container {
+  min-width: 634px;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 50%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+.contact-form button {
+  width: 50%;
+  padding: 14px;
+  background: #1d2671;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #16205a;
 }
